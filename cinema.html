@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Result</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Script -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="./db/video.js" defer ></script>
+    <script src="./js/cinema.js" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navigation" id="nav-js">
+        <div class="container">
+            <div class="row navigation__row">
+                <div class="col-6">
+                    <a href="./index.html" class="logo">Cinema</a>
+                </div>
+                <div class="col-6 navigation__search">
+                    <form class="navigation-form">
+                        <label class="label">
+                            <input type="text" class="input" id="searcg-input-js">
+                            <button class="search" type="button" id="search-button-js">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="header__cinema" id="res-cinema-js">
+        <div class="cinema__imageholder" id="cinema-image-js">
+            <img src="./image/image-2.jpeg" alt="Error">
+        </div>
+        <div class="container">
+            <div class="col-12">
+                <div class="cinema__wrap">
+                    <div class="cinema__imageholder-small" id="cinema-poster-js">
+                        <img src="./image/image-3.jpeg" alt="Error">
+                    </div>
+                    <div class="cinema__desc">
+                        <h3 class="cinema__title" id="cinema-title-js">
+                            Wonder Woman 1984
+                        </h3>
+                        <div class="stars-icon" id="cinema-level-js">
+                            <time class="carousel-time" id="cinema-year-js">2021</time>
+                            <img src="./image/star-filled-icon.svg" alt="Error">
+                            <span class="stars-level" id="level-count-js">7.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main -->
+    <main class="inner-page cinema__main">
+        <div class="container">
+            <div class="col-10">
+                <h2 class="title-2">
+                    Overview
+                </h2>
+                <div class="cinema__text" id="cinema-plot-js">
+                    <p>
+                        Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and
+                        finds a formidable foe by the name of the Cheetah.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class="video__playholder">
+            <div class="container">
+                <div class="col-12">
+                    <video src="" controls poster="./image/image-2.jpeg" id="video-js"></video>
+                </div>
+            </div>
+        </section>
+        <section class="res-search d-none" id="result-search-js">
+            <div class="container">
+                <div class="row video__row" id="video-result-js" >
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="col-8">
+                <div class="footer__content">
+                    <div class="copyright">
+                        <a href="./index.html" class="logo">
+                            Cinema
+                        </a>
+                        <time><span>&#xa9;</span> <span>2023</span></time>
+                    </div>
+                    <p class="footer-text">
+                        powered by <a href="https://github.com/HayotbekIT" target="_blank">Khaetbek</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

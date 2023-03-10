@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;700&display=swap');
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body {
+    background: #000000;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.navigation {
+    padding: 16px 0;
+    background: #1A1F38;
+}
+
+img,
+svg,
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: middle;
+    object-position: center;
+}
+
+a,
+input,
+label,
+textarea,
+span,
+button {
+    display: inline-block;
+    font-family: inherit;
+}
+
+input,
+textarea,
+button {
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logo:hover {
+    color: #FFFFFF;
+}
+
+.navigation__search {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.label {
+    position: relative;
+}
+
+.search {
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 23px;
+    top: 0px;
+    bottom: 0px;
+    background: transparent;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search i {
+    color: #FFFFFF;
+    font-size: 33px;
+}
+
+.input {
+    border: none;
+    outline: none;
+    max-width: 475px;
+    width: 100%;
+    height: 58px;
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 8px;
+    /*  */
+    padding: 8px calc(45px + 23px) 7px 15px;
+}
+
+.carousel-item {
+    max-height: 811px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100%;
+}
+
+.carousel-content {
+    position: absolute;
+    bottom: 84px;
+    left: 81px;
+}
+
+.carousel {
+    font-family: 'Roboto';
+    font-style: normal;
+
+}
+
+.carousel-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.carousel-text {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.stars-icon {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-time {
+    display: none;
+}
+
+.carousel-text {
+    margin-bottom: 50px;
+}
+
+.stars-icon>img {
+    width: 40px;
+}
+
+.stars-icon>*+* {
+    margin-left: 11px;
+}
+
+.inner-page {
+    padding: 50px 0 225px;
+}
+
+.video__row {
+    display: flex;
+    row-gap: 34px;
+    flex-wrap: wrap;
+}
+
+.videos--title {
+    margin-bottom: 35px;
+}
+
+.title-2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.video__desc {
+    padding: 15px 18px 12px;
+}
+
+.video__link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.video__link img {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
+
+.video__link:hover img {
+    transform: scale(1.2);
+}
+
+.video__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #B6B6B6;
+    min-height: 44px;
+}
+
+.video__date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+}
+
+.video {
+    background: #050E12;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.video__imageholder {
+    overflow: hidden;
+    height: 290px;
+}
+
+.video__imageholder img{
+    height: 100%;
+}
+
+.footer__content {
+    color: #E2E2E2;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+}
+
+.copyright>* {
+    flex-shrink: 0;
+}
+
+.copyright>*+* {
+    margin-left: 15px;
+}
+
+.footer-text {
+    font-size: 24px;
+}
+
+.footer {
+    padding-bottom: 140px;
+}
+
+/* Cinema */
+
+.cinema__imageholder {
+    height: 464px;
+    background: rgba(2, 2, 2, 0.4);
+    overflow: hidden;
+}
+
+.cinema__imageholder img{
+    height: 100%;
+    object-position: top center;
+}
+
+.cinema__imageholder-small {
+    width: 205px;
+}
+
+.cinema__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #EDEDED;
+}
+
+.cinema__desc>*+* {
+    margin-top: 23px;
+}
+
+.cinema__wrap {
+    display: flex;
+    column-gap: 40px;
+    align-items: flex-end;
+    margin-top: -150px;
+}
+
+.cinema__main {
+    padding-top: 52px;
+
+}
+
+.cinema__text {
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.video__playholder{
+    padding: 20px 0;
+}
+
+.video__playholder video{
+    height: 500px;
+}
+
+/* Media */
+
+@media (max-width: 1199px) {
+    .carousel-text {
+        display: none;
+    }
+
+    .carousel-title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .stars-icon {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .stars-icon>img {
+        width: 9px;
+    }
+
+    .carousel-time {
+        display: block;
+    }
+
+    .stars-icon>*+.stars-level {
+        margin-left: 8px;
+    }
+
+    .inner-page {
+        padding: 19px 0 100px;
+    }
+
+    .title-2 {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .copyright {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .footer-text {
+        font-size: 7px;
+        line-height: 8px;
+    }
+
+    /*  */
+    .cinema__wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -42px;
+        row-gap: 8px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .footer .logo {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .search {
+        width: 18px;
+
+    }
+
+    .search i {
+        font-size: 14px;
+    }
+
+    .input {
+        display: none;
+        height: 19px;
+        padding: 0 7px 3px;
+    }
+
+    .label {
+        height: 22px;
+    }
+
+    .carousel-content {
+        left: 15px;
+        bottom: 77px;
+    }
+
+    .cinema__imageholder-small {
+        width: 54px;
+    }
+
+    .cinema__text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .cinema__title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .cinema__desc>*+* {
+        margin-top: 13px;
+    }
+    
+    .video__playholder video{
+        height: 320px;
+    }
+
+}
